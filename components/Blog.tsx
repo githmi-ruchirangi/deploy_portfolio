@@ -1,12 +1,35 @@
 import React from "react";
+import BlogCard from "./Helper/BlogCard";
+
 
 const Blog = () => {
 
     return (
     <div className="pt-[5rem] pb-[3rem] bg-black">
         <div className="text-center">
-        <p>My Blog</p>
-        <h1>My Latest <span>Blogs</span> and news</h1>
+        <p className="heading_mini">My Blog</p>
+        <h1 className="heading_primary">My Latest <span className="text-yellow-300">Blogs</span> and news</h1>
+            </div>
+            <div className="w-[80%] mx-auto pt-[3rem] md:pt-[5rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-[2rem]">
+            <div
+            data-aos="zoom-in" 
+            data-aos-anchor-placement="top-bottom" 
+            >
+                <BlogCard title="Fullstack Developer Roadmap" comment="4" date="24 Jan 2024" image="/images/b1.jpg"/>
+            </div>
+            <div
+            data-aos="zoom-in" 
+            data-aos-anchor-placement="top-bottom" 
+            data-aos-delay="200">
+                <BlogCard title="Starting with React JS" comment="10" date="14 Feb 2024" image="/images/b2.png"/>
+            </div>
+            <div
+            data-aos="zoom-in" 
+            data-aos-anchor-placement="top-bottom" 
+            data-aos-delay="400">
+                <BlogCard title="Time Management with Tech Job" comment="15" date="02 Dec 2023" image="/images/b3.jpg"/>
+            </div>
+            
             </div>
         </div>
     );

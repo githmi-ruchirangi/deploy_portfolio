@@ -11,22 +11,40 @@ const Services = () => {
         </h1>
         </div>
         <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-center">
-            <div>
+            <div
+            data-aos="fade-up" 
+            data-aos-anchor-placement="top-center"  >
                 <ServiceCard title="React Website" num="01"/>
             </div>
-            <div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="200"
+            >
                 <ServiceCard title="Next JS Website" num="02"/>
             </div>
-            <div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="400">
                 <ServiceCard title="Fullstack Website" num="03"/>
             </div>
-            <div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="600">
                 <ServiceCard title="Node JS Api" num="04"/>
             </div>
-            <div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="800">
                 <ServiceCard title="MERN WebApp" num="05"/>
             </div>
-            <div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="1000">
                 <ServiceCard title="Bug Fixing" num="06"/>
             </div>
         </div>
