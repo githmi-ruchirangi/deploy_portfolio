@@ -6,7 +6,7 @@ const Reviews = () => {
     return (
     <div className="pt-[5rem] pb-[3rem] bg-gray-900">
         <div className="text-center">
-        <p className="heading_mini">Client Reviews</p>
+        <p className="heading_mini">Recommendations</p>
         <h1 className="heading_primary">I've <span className="text-yellow-400"> 40+</span> Clients Feedback
         </h1>
         </div>

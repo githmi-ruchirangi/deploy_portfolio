@@ -4,13 +4,14 @@ import Image from "next/image";
 interface Props {
   image: string;
   title: string;
-  tech1: string;
-  tech2: string;
-  tech3: string;
-  tech4: string;
+  tech1?: string;  
+  tech2?: string;  
+  tech3?: string;  
+  tech4?: string;  
+  dec: string;
 }
 
-const ProjectCard = ({ image, tech1, tech2, tech3, tech4, title }: Props) => {
+const ProjectCard = ({ image, tech1, tech2, tech3, tech4, title, dec }: Props) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -46,18 +47,14 @@ const ProjectCard = ({ image, tech1, tech2, tech3, tech4, title }: Props) => {
       </div>
       <div>
         <h1 className="text-[25px] text-white">{title}</h1>
-        <p className="text-white opacity-65 text-[15px] mt-[1rem]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Kuis nostrud exercitation ullamco laboris nisi ut aliquip
-             ex ea Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.ea Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <p className="text-white opacity-65 text-[15px] mt-[1rem] text-justify">{dec}</p>
 
-             <div className="mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
-                <h1 className="px-6 py-1 bg-blue-700 text-white rounded-lg text-center">{tech1}</h1>
-             
-                <h1 className="px-6 py-1 bg-white text-black rounded-lg text-center">{tech2}</h1>
-             
-                <h1 className="px-6 py-1 bg-sky-500 text-black rounded-lg text-center">{tech3}</h1>
-             
-                <h1 className="px-6 py-1 bg-blue-800 text-white rounded-lg text-center">{tech4}</h1>
-             </div>
+        <div className="mt-[1.3rem] grid-cols-2 grid sm:grid-cols-3 xl:grid-cols-4 gap-[2rem]">
+          {tech1 && <h1 className="px-6 py-1 bg-blue-700 text-white rounded-lg text-center text-xs">{tech1}</h1>}
+          {tech2 && <h1 className="px-6 py-1 bg-white text-black rounded-lg text-center text-xs">{tech2}</h1>}
+          {tech3 && <h1 className="px-6 py-1 bg-sky-500 text-black rounded-lg text-center text-xs">{tech3}</h1>}
+          {tech4 && <h1 className="px-6 py-1 bg-blue-800 text-white rounded-lg text-center text-xs">{tech4}</h1>}
+        </div>
       </div>
     </div>
   );

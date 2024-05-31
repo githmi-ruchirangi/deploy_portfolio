@@ -27,15 +27,15 @@ const Nav = ({openNav}:Props) => {
     return ( 
     <div className={`fixed w-[100%] ${stickyStyle} transition-all duration-300 z-[1000] `}>
         <div className="flex items-center h-[12vh] justify-between w-[80%] mx-auto">
-            <div className="font-logo text-white text-[18px]">
-                <span className="text-[30px] md:text-[40px] text-yellow-400">WD</span>
-                Warriors
-            </div>
+        <div className="font-logo text-white text-[18px]">
+    <span className="text-[30px] md:text-[40px] text-yellow-300">WD</span>
+    <span className="text-[28px] md:text-[30px]"> Insights</span>
+</div>
             <ul className="md:flex hidden items-center space-x-10">
             <li><a className="nav_link" href="#">Home</a></li>
             <li><a className="nav_link"href="#">About</a></li>
             <li><a className="nav_link"href="#">Services</a></li>
-            <li><a className="nav_link"href="#">Blog</a></li>
+            <li><a className="nav_link"href="#">Projects</a></li>
             <li><a className="nav_link"href="#">Contact me</a></li>
             </ul>
             <Bars3CenterLeftIcon onClick={openNav} 

@@ -1,9 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TypeWriteEffect from "./Helper/TypeWriteEffect";
 import Image from 'next/image';
 
 const Hero = () => {
 
+    useEffect(() => {
+        const handleDownloadCV = () => {
+            const cvUrl = "/pdfs/Wihanga Dilantha-Resume.pdf";
+            const link = document.createElement('a');
+            link.href = cvUrl;
+            link.setAttribute('download', 'Wihanga Dilantha-Resume.pdf');
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+
+        const downloadButton = document.getElementById('download-cv-button');
+        if (downloadButton) {
+            downloadButton.addEventListener('click', handleDownloadCV);
+        }
+
+        return () => {
+            if (downloadButton) {
+                downloadButton.removeEventListener('click', handleDownloadCV);
+            }
+        };
+        
+    }, []);
+    
+
+    useEffect(() => {
+        const handleHireMeClick = () => {
+            const resumeUrl = "/pdfs/Wihanga Dilantha-Resume.pdf"; 
+            window.open(resumeUrl, "_blank");
+        };
+
+        const hiremeButton = document.getElementById('hire-me-button');
+        if (hiremeButton) {
+            hiremeButton.addEventListener('click', handleHireMeClick);
+        }
+
+        return () => {
+            if (hiremeButton) {
+                hiremeButton.removeEventListener('click', handleHireMeClick);
+            }
+        };
+        
+    }, []);
+
+    
+    // const handleDownloadCV = () => {
+    //     const cvUrl = "https://example.com/path/to/cv.pdf"; 
+    //     window.open(cvUrl, "_blank");
+    // };
+
+    
     return (
     <div className="w-[100vw] pt-[4vh] md:pt-[12vh] h-[85vh] md:h-[100vh] custom-bg">
        <div className="flex justify-center flex-col w-[80%] h-[100%] mx-auto">
@@ -19,14 +70,14 @@ const Hero = () => {
         <p 
         data-aos="fade-up" 
         data-aos-delay="800"  
-        className="mt-[1.2rem] text-[15px] md:text-[17px] text-[#c4cfde]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Kuis nostrud exercitation ullamco 
-             laboris nisi ut aliquip ex ea commodo consequat.</p>
+        className="mt-[1.3rem] text-[15px] md:text-[13px] text-[#c4cfde] text-justify">
+            A passionate software engineer with over one year of experience in Java, Spring Boot and Microservices, specializing in backend development and REST APIs. Additionally, I have over a year of experience in React, Python and Flask. I excel at problem-solving, system design, and system enhancement. As a responsible and self-motivated individual, I am a recent graduate with strong technical skills, eager to embrace challenges, and dedicated to utilizing my abilities to contribute to organizational growth.</p>
              <div className="mt-[2rem] flex items-center space-x-6">
                 <button 
                 data-aos="zoom-in" 
                 data-aos-delay="1200" 
-                className="relative flex h-[50px] w-40 items-center justify-center font-semibold overflow-hidden bg-red-700 text-white
+                id="hire-me-button"
+                className=" relative flex h-[50px] w-40 items-center justify-center font-semibold overflow-hidden bg-red-700 text-white
                 shadow-2xl transition-all rounded-md hover:-translate-y-1 hover:scale-105 before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-600 before:duration-500 before:ease-out
                 hover:before:h-56 hover:before:w-56">
                     <span className="relative z-10">Hire me</span>
@@ -34,7 +85,8 @@ const Hero = () => {
                 <button 
                 data-aos="zoom-out" 
                 data-aos-delay="1600" 
-                className="before:ease relative h-12 w-40 overflow-hidden bg-orange-500 text-white font-semibold rounded-md hover:-translate-y-1 hover:scale-105 shadow-2xl before:absolute before:left-0 before:-ml-2 
+                id="download-cv-button"
+                className="before:ease relative h-12 w-40 overflow-hidden bg-green-800 text-white font-semibold rounded-md hover:-translate-y-1 hover:scale-105 shadow-2xl before:absolute before:left-0 before:-ml-2 
                 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 before:bg-green-600 before:transition-all before:duration-300 
                 hover:text-white hover:shadow-black hover:before:-rotate-180 ">
                     <span className="relative z-10">Download CV</span>

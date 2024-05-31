@@ -20,7 +20,7 @@ const NavMobile = ({closeNav,showNav}:Props) => {
             <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">Home</a></li>
             <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">About</a></li>
             <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">Services</a></li>
-            <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">Blog</a></li>
+            <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">Projects</a></li>
             <li><a className="nav_link text-[25px] sm:text-[30px]" href="#">Contact me</a></li>
             <XMarkIcon onClick={closeNav}  className="absolute top-[-1.4rem] right-[1.4rem] w-[2.2rem] h-[2.2rem] text-white"></XMarkIcon>
         </ul>

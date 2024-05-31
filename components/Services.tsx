@@ -10,43 +10,58 @@ const Services = () => {
         <h1 className="heading_primary">My Special <span className="text-yellow-400">Services</span> For You
         </h1>
         </div>
-        <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[3rem] items-center">
+        <div className="pt-[5rem] w-[80%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[3rem] items-center">
             <div
             data-aos="fade-up" 
             data-aos-anchor-placement="top-center"  >
-                <ServiceCard title="React Website" num="01"/>
+                <ServiceCard title="Web Application Development" num="01" description="Building robust and scalable web applications tailored to your business needs."/>
             </div>
             <div
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="200"
             >
-                <ServiceCard title="Next JS Website" num="02"/>
+                <ServiceCard title="Responsive Design" num="02" description="Creating responsive designs that provide an optimal user experience on any device."/>
             </div>
             <div
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="400">
-                <ServiceCard title="Fullstack Website" num="03"/>
+                <ServiceCard title="UI/UX Design" num="03" description="Designing user interfaces and user experiences that are both intuitive and visually appealing."/>
             </div>
             <div
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="600">
-                <ServiceCard title="Node JS Api" num="04"/>
+                <ServiceCard title="Database Management" num="04" description="Designing and managing efficient and secure databases to store and organize your data."/>
             </div>
             <div
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="800">
-                <ServiceCard title="MERN WebApp" num="05"/>
+                <ServiceCard title="API Integration" num="05" description="Integrating various APIs to extend the functionality of your applications."/>
             </div>
+           
             <div
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="1000">
-                <ServiceCard title="Bug Fixing" num="06"/>
+                <ServiceCard title="Custom Solutions" num="06" description="Providing custom solutions to meet unique business requirements."/>
             </div>
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="1200">
+                <ServiceCard title="Security Implementation" num="07" description="Implementing security measures to protect your applications from threats."/>
+            </div>
+           
+            <div
+             data-aos="fade-up" 
+             data-aos-anchor-placement="top-center"
+             data-aos-delay="1400">
+                <ServiceCard title="Testing and Bug Fixing" num="08" description="Conducting thorough testing and fixing bugs to ensure your applications run smoothly."/>
+            </div>
+            
         </div>
     </div>
     );

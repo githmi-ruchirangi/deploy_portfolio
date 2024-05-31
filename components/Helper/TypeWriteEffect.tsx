@@ -6,13 +6,13 @@ const TypeWriteEffect = () => {
     return (
         <TypeAnimation
         sequence={[
-          'a React Developer',
+          'a Software Engineer',
           1000, 
-          'a Next JS Developer',
+          'a',
           1000,
-          'a Java Developer',
+          'a Software Engineer',
           1000,
-          'a designer',
+          'a',
           1000
         ]}
         wrapper="span"
