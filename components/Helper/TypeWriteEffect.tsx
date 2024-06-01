@@ -8,9 +8,9 @@ const TypeWriteEffect = () => {
         sequence={[
           'a Software Engineer',
           1000, 
-          'a',
+          'a  Researcher',
           1000,
-          'a Software Engineer',
+          'a  Freelancer',
           1000,
           'a',
           1000
