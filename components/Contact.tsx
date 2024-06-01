@@ -10,15 +10,31 @@ const Contact: React.FC = () => {
     subject: '',
     message: ''
   });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
+
+  const validateForm = () => {
+    const newErrors: { [key: string]: string } = {};
+    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.email) newErrors.email = "Email is required";
+    else if (!/\S+@\S+\.\S+/.test(formData.email)) newErrors.email = "Email is invalid";
+    if (!formData.subject) newErrors.subject = "Subject is required";
+    if (!formData.message) newErrors.message = "Message is required";
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
   
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
+
+    setLoading(true);
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
@@ -27,30 +43,27 @@ const Contact: React.FC = () => {
     if (!serviceId || !templateId || !publicKey) {
       console.error('Missing required environment variables for EmailJS!');
       alert('Please configure your EmailJS credentials in environment variables.');
+      setLoading(false);
       return;
     }
 
-    emailjs.send(
-      serviceId,
-      templateId,
-      formData,
-      publicKey
-    )
-    .then((response) => {
+    try {
+      const response = await emailjs.send(serviceId, templateId, formData, publicKey);
       console.log('SUCCESS!', response.status, response.text);
       alert('Email sent successfully!');
-    })
-    .catch((err) => {
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } catch (err: any) {
       console.error('FAILED...', err);
-      alert('Failed to send email. Please try again later.');
-    });
-
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+      const errorMessage = err.text || err.message || 'An unknown error occurred';
+      alert(`Failed to send email. Please try again later. Error: ${errorMessage}`);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -77,30 +90,37 @@ const Contact: React.FC = () => {
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] items-center">
                           <input
                               type="text"
+                              name="name"
                               placeholder="Name"
                               className="py-[0.7rem] outline-none text-white bg-gray-800 rounded-md px-4"
                               value={formData.name}
                               onChange={handleChange}
                               required
                           />
+                          {errors.name && <p className="text-red-500">{errors.name}</p>}
                           <input
                               type="email"
+                              name="email"
                               placeholder="E-mail"
                               className="py-[0.7rem] outline-none text-white bg-gray-800 rounded-md px-4"
                               value={formData.email}
                               onChange={handleChange}
                               required
                           />
+                          {errors.email && <p className="text-red-500">{errors.email}</p>}
                       </div>
                       <input
                           type="text"
+                          name="subject"
                           placeholder="Subject"
                           className="py-[0.7rem] mt-[1.5rem] mb-[1.5rem] w-full outline-none text-white bg-gray-800 rounded-md px-4"
                           value={formData.subject}
                           onChange={handleChange}
                           required
                       />
+                      {errors.subject && <p className="text-red-500">{errors.subject}</p>}
                       <textarea
+                          name="message"
                           placeholder="Message"
                           className="py-[0.7rem] mb-[1.5rem] w-full outline-none text-white bg-gray-800 px-4 rounded-md"
                           rows={4}
@@ -108,8 +128,10 @@ const Contact: React.FC = () => {
                           onChange={handleChange}
                           required>
                       </textarea>
-                      <button type="submit" className="py-[0.7rem] mb-[1.5rem] w-full outline-none text-white bg-blue-600 hover:bg-blue-800 rounded-md
-                      px-4" >Submit</button>
+                      {errors.message && <p className="text-red-500">{errors.message}</p>}
+                      <button type="submit" className={`py-[0.7rem] mb-[1.5rem] w-full outline-none text-white bg-blue-600 hover:bg-blue-800 rounded-md px-4 ${loading ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={loading}>
+                        {loading ? 'Sending...' : 'Submit'}
+                      </button>
                   </form>
               </div>
           </div>
