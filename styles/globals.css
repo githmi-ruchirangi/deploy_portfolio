@@ -13,11 +13,11 @@
         after:duration-300 after:origin-right
     }
     .custom-bg{
-        background-image: linear-gradient(to right, rgba(0,0,0,0.836), rgba(0,0,0,0.811)), url("/images/bg.jpg");
+        background-image:url("/images/bg2.png");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        clip-path: polygon(0 0,100% 0, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0,100% 0, 100% 97%, 0% 100%);
     }
     .heading_mini{
         @apply text-[17px] text-white opacity-75
