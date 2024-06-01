@@ -45,10 +45,10 @@ const Skills = () => {
                             <SkillCard title="Python" image="/images/python.svg"  />
                         </div>
                         <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="800">
-                            <SkillCard title="HTML" image="/images/HTML.svg"  />
+                            <SkillCard title="Flutter" image="/images/flutter.svg"  />
                         </div>
                         <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="1000">
-                            <SkillCard title="CSS" image="/images/css.svg"  />
+                            <SkillCard title="Dart" image="/images/dart.png"  />
                         </div>
                         <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="1200">
                             <SkillCard title="JavaScript" image="/images/js.svg"  />
@@ -84,10 +84,10 @@ const Skills = () => {
                                     <SkillCard title="Firebase" image="/images/firebase.svg"  />
                                 </div>
                                 <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="200">
-                                    <SkillCard title="Flutter" image="/images/flutter.svg"  />
+                                    <SkillCard title="HTML5" image="/images/HTML.svg"  />
                                 </div>
                                 <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="400">
-                                    <SkillCard title="Dart" image="/images/dart.png"  />
+                                    <SkillCard title="CSS" image="/images/css.svg"  />
                                 </div>
                                 <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="600">
                                     <SkillCard title="MySQL" image="/images/mysql.svg"  />
