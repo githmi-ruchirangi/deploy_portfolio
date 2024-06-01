@@ -37,7 +37,7 @@ const HomePage: React.FC = () => {
 
     return (
         <div className="overflow-hidden">
-            <NavMobile showNav={showNav} closeNav={closeNavHandler} />
+            <NavMobile showNav={showNav} closeNav={closeNavHandler} refs={{ aboutRef, servicesRef, projectsRef, contactRef }} />
             <Nav 
             aboutRef={aboutRef} 
             servicesRef={servicesRef} 
