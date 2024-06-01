@@ -12,8 +12,7 @@ const TypeWriteEffect = () => {
           1000,
           'a  Freelancer',
           1000,
-          'a',
-          1000
+        
         ]}
         wrapper="span"
         speed={50}
