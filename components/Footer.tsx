@@ -57,7 +57,7 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
                 </div>
             </div>
             <div className="mt-[1.4rem] w-[80%] mx-auto text-white opacity-70">
-                &#169; Copyright © 2024 by WihangaD | All Rights Reserved
+                &#169; Copyright 2024 by WihangaD | All Rights Reserved
             </div>
             <ScrollUp />
         </div>
