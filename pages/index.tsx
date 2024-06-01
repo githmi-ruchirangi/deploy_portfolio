@@ -38,7 +38,12 @@ const HomePage: React.FC = () => {
     return (
         <div className="overflow-hidden">
             <NavMobile showNav={showNav} closeNav={closeNavHandler} />
-            <Nav openNav={showNavHandler} />
+            <Nav 
+            aboutRef={aboutRef} 
+            servicesRef={servicesRef} 
+            projectsRef={projectsRef} 
+            contactRef={contactRef} 
+            openNav={showNavHandler} />
             <Hero />
             <section ref={aboutRef}>
                 <AboutMe />

@@ -2,6 +2,7 @@ import { MapIcon } from "@heroicons/react/16/solid";
 import React from "react";
 import { EnvelopeIcon } from "@heroicons/react/16/solid";
 import { PhoneIcon } from "@heroicons/react/16/solid";
+import ScrollUp from "@/components/Helper/ScrollUp"
 
 interface FooterProps {
     aboutRef: React.RefObject<HTMLElement>;
@@ -28,12 +29,13 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
                     <h1 className="text-[14px] mt-[0.5rem] text-white opacity-70 text-justify">
                         WD Insights brings your vision to life through innovative software solutions.
                         From web applications to mobile apps and backend services, I dedicate to delivering top-quality results.
-                        Reach out to us for inquiries, collaborations, or project discussions. Let's make your brand shine!
+                        Reach out me for inquiries, collaborations, or project discussions. Let's make your brand shine!
                     </h1>
                     <p className="mt-[1.3rem] text-yellow-300 font-light underline cursor-pointer">dilanthaweerakoon@gmail.com</p>
                 </div>
                 <div className="md:mx-auto">
                     <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">Quick Links</h1>
+                    <p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>Home</p>
                     <p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300" onClick={() => scrollToRef(aboutRef)}>About</p>
                     <p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300" onClick={() => scrollToRef(servicesRef)}>Services</p>
                     <p className="text-[15px] text-white opacity-80 mb-[1rem] cursor-pointer hover:text-yellow-300" onClick={() => scrollToRef(projectsRef)}>Projects</p>
@@ -58,6 +60,7 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
             <div className="mt-[1.4rem] w-[80%] mx-auto text-white opacity-70">
                 &#169; Copyright © 2024 by WihangaD | All Rights Reserved
             </div>
+            <ScrollUp />
         </div>
     );
 };
