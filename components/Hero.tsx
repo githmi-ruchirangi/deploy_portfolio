@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import TypeWriteEffect from "./Helper/TypeWriteEffect";
 import Image from 'next/image';
 
-const Hero = () => {
+interface Props {
+    contactRef: React.RefObject<HTMLElement>;
+}
+
+const Hero = ({ contactRef }: Props) => {
 
     useEffect(() => {
         const handleDownloadCV = () => {
@@ -28,13 +32,14 @@ const Hero = () => {
         
     }, []);
     
+    const handleHireMeClick = () => {
+        if (contactRef.current) {
+            contactRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
 
     useEffect(() => {
-        const handleHireMeClick = () => {
-            const resumeUrl = "/pdfs/Wihanga Dilantha-Resume.pdf"; 
-            window.open(resumeUrl, "_blank");
-        };
-
         const hiremeButton = document.getElementById('hire-me-button');
         if (hiremeButton) {
             hiremeButton.addEventListener('click', handleHireMeClick);
@@ -45,8 +50,8 @@ const Hero = () => {
                 hiremeButton.removeEventListener('click', handleHireMeClick);
             }
         };
-        
     }, []);
+    
 
     
     // const handleDownloadCV = () => {

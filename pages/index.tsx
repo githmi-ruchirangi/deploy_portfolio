@@ -44,7 +44,9 @@ const HomePage: React.FC = () => {
             projectsRef={projectsRef} 
             contactRef={contactRef} 
             openNav={showNavHandler} />
-            <Hero />
+            <Hero
+            contactRef={contactRef}
+            />
             <section ref={aboutRef}>
                 <AboutMe />
             </section>
