@@ -59,7 +59,7 @@ const Services = () => {
              data-aos="fade-up" 
              data-aos-anchor-placement="top-center"
              data-aos-delay="1400">
-                <ServiceCard title="Testing and Bug Fixing" num="08" description="Conducting thorough testing and fixing bugs to ensure your applications run smoothly."/>
+                <ServiceCard title="Search Engine Optimization" num="08" description="Optimizing websites to enhance visibility and ranking on search engine results pages."/>
             </div>
             
         </div>

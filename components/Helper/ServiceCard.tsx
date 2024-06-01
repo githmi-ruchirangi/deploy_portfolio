@@ -1,10 +1,10 @@
 import { 
-    BugAntIcon, 
+     
     CodeBracketIcon, 
     CommandLineIcon, 
     CursorArrowRaysIcon, 
     RocketLaunchIcon, 
-    ServerIcon, 
+    GlobeAltIcon, 
     CubeIcon,
     ShieldCheckIcon
 } from "@heroicons/react/16/solid";
@@ -17,13 +17,13 @@ interface Props{
 
 const iconMapping = {
     "01": CommandLineIcon,
-    "02": ServerIcon,
+    "02": CommandLineIcon,
     "03": CodeBracketIcon,
     "04": CubeIcon,
     "05": RocketLaunchIcon,
     "06": CursorArrowRaysIcon,
     "07": ShieldCheckIcon,
-    "08": BugAntIcon
+    "08": GlobeAltIcon
 };
 
 const ServiceCard = ({ num, title, description }: Props) => {
