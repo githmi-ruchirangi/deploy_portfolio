@@ -57,7 +57,7 @@ const Project = () => {
         image="/images/p4.jpg" 
       />
        <ProjectCard 
-        title="RMD Food City Ecommerce Platform" 
+        title="RMD Food City E-commerce Platform" 
         dec="Designed and developed the RMD Food City Ecommerce Platform using
         React JS and Laravel, offering a user-friendly interface and advanced
         functionalities for a seamless online shopping experience." 

@@ -23,8 +23,7 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
             <div className="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem] border-b-[1.4px] pb-5 border-gray-600 border-opacity-40">
                 <div>
                     <div className="font-logo text-white text-[18px]">
-                        <span className="text-[30px] md:text[40px] text-yellow-400">WD.</span>
-                        Dev
+                        <span className="text-[30px] md:text[40px] text-yellow-400">Wihanga</span> Dilantha
                     </div>
                     <h1 className="text-[14px] mt-[0.5rem] text-white opacity-70 text-justify">
                         WD Insights brings your vision to life through innovative software solutions.
