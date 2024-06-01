@@ -21,7 +21,7 @@ const Services = () => {
              data-aos-anchor-placement="top-center"
              data-aos-delay="200"
             >
-                <ServiceCard title="Responsive Design" num="02" description="Creating responsive designs that provide an optimal user experience on any device."/>
+                <ServiceCard title="Android Development" num="02" description="Proficient in developing user-friendly Android apps for seamless performance on various devices."/>
             </div>
             <div
              data-aos="fade-up" 
