@@ -81,9 +81,9 @@ const Contact: React.FC = () => {
                   <h1 className="mt-[2rem] mb-[2rem] text-[17px] text-yellow-300 underline font-bold flex items-center">
                       <FontAwesomeIcon icon={faPhoneAlt} className="mr-2" /> +94 71 919 0880
                   </h1>
-                  <h1 className="mt-[2rem] mb-[2rem] text-[17px] text-yellow-300 underline font-bold flex items-center cursor-pointer">
+                  <a href="mailto:dilanthaweerakoon@gmail.com" className="mt-[2rem] mb-[2rem] text-[17px] text-yellow-300 underline font-bold flex items-center cursor-pointer">
                       <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> dilanthaweerakoon@gmail.com
-                  </h1>
+                  </a>
               </div>
               <div>
                   <form onSubmit={handleSubmit}>

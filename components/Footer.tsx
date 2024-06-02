@@ -25,12 +25,12 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
                     <div className="font-logo text-white text-[18px]">
                         <span className="text-[30px] md:text[40px] text-yellow-400">Wihanga</span> Dilantha
                     </div>
-                    <h1 className="text-[14px] mt-[0.5rem] text-white opacity-70 text-justify">
+                    <h1 className="text-[14px] mt-[0.5rem] mb-[1rem] text-white opacity-70 text-justify">
                         WD Insights brings your vision to life through innovative software solutions.
                         From web applications to mobile apps and backend services, I dedicate to delivering top-quality results.
                         Reach out me for inquiries, collaborations, or project discussions. Let's make your brand shine!
                     </h1>
-                    <p className="mt-[1.3rem] text-yellow-300 font-light underline cursor-pointer">dilanthaweerakoon@gmail.com</p>
+                    <a href="mailto:dilanthaweerakoon@gmail.com" className="mt-[1.3rem]  text-yellow-300 font-light underline cursor-pointer">dilanthaweerakoon@gmail.com</a>
                 </div>
                 <div className="md:mx-auto">
                     <h1 className="text-white font-semibold mb-[1.4rem] text-[17px]">Quick Links</h1>
@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({ aboutRef, servicesRef, projectsRef, con
                     </div>
                     <div className="flex items-center mt-[1rem] space-x-2">
                         <EnvelopeIcon className="w-[1rem] h-[1rem] text-yellow-300" />
-                        <p className="text-[17px] font-normal text-white opacity-75">dilanthaweerakoon@gmail.com</p>
+                        <a href="mailto:dilanthaweerakoon@gmail.com" className="text-[17px] font-normal text-white opacity-75 underline cursor-pointer">dilanthaweerakoon@gmail.com</a>
                     </div>
                     <div className="flex items-center mt-[1rem] space-x-2">
                         <PhoneIcon className="w-[1rem] h-[1rem] text-yellow-300" />

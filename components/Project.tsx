@@ -20,6 +20,7 @@ const Project = () => {
         tech4="Flask"
         tech4Padding="px-6 py-3"
         image="/images/p1.png" 
+        repoLink="https://github.com/yourusername/ai-chess-analysis"
       />
       <ProjectCard 
         title="AI Powered Speech Emotion Detection System" 
@@ -33,6 +34,7 @@ const Project = () => {
         tech4="Flask"
         tech4Padding="px-6 py-3"
         image="/images/p2.jpg" 
+        repoLink="https://github.com/yourusername/ai-chess-analysis"
       />
       <ProjectCard 
         title="Modern Portfolio Website" 
@@ -46,6 +48,7 @@ const Project = () => {
         tech4="TypeScript"
         tech4Padding="px-6 py-3"
         image="/images/p3.jpg" 
+        repoLink="https://github.com/yourusername/ai-chess-analysis"
       />
       <ProjectCard 
         title="Gas Level Indicator Application" 
@@ -55,6 +58,7 @@ const Project = () => {
         tech2="Firebase"
         tech2Padding="px-6 py-3"
         image="/images/p4.jpg" 
+        repoLink="https://github.com/yourusername/ai-chess-analysis"
       />
        <ProjectCard 
         title="RMD Food City E-commerce Platform" 
@@ -66,6 +70,7 @@ const Project = () => {
         tech2="Laravel"
         tech2Padding="px-6 py-3"
         image="/images/p5.jpg" 
+        repoLink="https://github.com/yourusername/ai-chess-analysis"
       />
     </div>
   );

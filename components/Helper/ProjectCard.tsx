@@ -13,9 +13,10 @@ interface Props {
   tech4?: string;
   tech4Padding?: string;
   dec: string;
+  repoLink?: string;
 }
 
-const ProjectCard = ({ image, tech1, tech1Padding, tech2, tech2Padding, tech3, tech3Padding, tech4, tech4Padding, title, dec }: Props) => {
+const ProjectCard = ({ image, tech1, tech1Padding, tech2, tech2Padding, tech3, tech3Padding, tech4, tech4Padding, title, dec,repoLink }: Props) => {
   const cardRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -59,6 +60,14 @@ const ProjectCard = ({ image, tech1, tech1Padding, tech2, tech2Padding, tech3, t
           {tech3 && <h1 className={`bg-sky-500 text-black rounded-lg text-center text-xs ${tech3Padding}`}>{tech3}</h1>}
           {tech4 && <h1 className={`bg-blue-800 text-white rounded-lg text-center text-xs ${tech4Padding}`}>{tech4}</h1>}
         </div>
+        {repoLink && (
+          <button 
+            onClick={() => window.open(repoLink, '_blank')} 
+            className="border border-blue-500 text-blue-500 bg-transparent px-4 py-2 rounded mt-4"
+          >
+            View Repository
+          </button>
+        )}
       </div>
     </div>
   );
