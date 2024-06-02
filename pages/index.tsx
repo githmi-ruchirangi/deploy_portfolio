@@ -13,6 +13,7 @@ import Footer from "@/components/Footer";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Interests from "@/components/Interests";
 
 const HomePage: React.FC = () => {
     const [showNav, setShowNav] = useState(false);
@@ -57,7 +58,7 @@ const HomePage: React.FC = () => {
             <section ref={projectsRef}>
                 <Project />
             </section>
-            <Reviews />
+            <Interests />
             <Blog />
             <section ref={contactRef}>
                 <Contact />

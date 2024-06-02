@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TypeWriteEffect from "./Helper/TypeWriteEffect";
 import Image from 'next/image';
-//import SolarSystem3D from "@/components/SolarSystem3D";
+
 
 interface Props {
     contactRef: React.RefObject<HTMLElement>;
