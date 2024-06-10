@@ -15,19 +15,19 @@ const Blog = () => {
             data-aos="zoom-in" 
             data-aos-anchor-placement="top-bottom" 
             >
-                <BlogCard title="Fullstack Developer Roadmap" comment="4" date="24 Jan 2024" image="/images/b1.jpg"/>
+                <BlogCard title="A Comprehensive Guide: Spring Boot Microservices"  date="02 June 2024" image="/images/b1.jpg" link="https://medium.com/@wihangaweerakoon/a-comprehensive-guide-spring-boot-microservices-3518e07c65d8"/>
             </div>
             <div
             data-aos="zoom-in" 
             data-aos-anchor-placement="top-bottom" 
             data-aos-delay="200">
-                <BlogCard title="Starting with React JS" comment="10" date="14 Feb 2024" image="/images/b2.png"/>
+                <BlogCard title="The Starter Guide: Search Engine Optimization (SEO)"  date="06 June 2024" image="/images/b2.png" link="https://medium.com/@wihangaweerakoon/the-starter-guide-search-engine-optimization-seo-924483acdfbc"/>
             </div>
             <div
             data-aos="zoom-in" 
             data-aos-anchor-placement="top-bottom" 
             data-aos-delay="400">
-                <BlogCard title="Time Management with Tech Job" comment="15" date="02 Dec 2023" image="/images/b3.jpg"/>
+                <BlogCard title="The Starter Guide: React Native for Beginners"  date="09 June 2024" image="/images/b3.jpg" link="https://medium.com/@wihangaweerakoon/react-native-for-beginners-a5b03bce7598"/>
             </div>
             
             </div>
