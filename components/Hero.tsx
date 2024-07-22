@@ -103,7 +103,7 @@ const Hero = ({ contactRef }: Props) => {
         // data-aos="fade-left" 
         // data-aos-delay="2000" 
         className="hidden md:block">
-        <Image src="/images/hero.png" alt="hero" width={600} height={600} className="object-contain"/>
+        <Image src="/images/hero.svg" alt="hero" width={600} height={600} className="object-contain"/>
         </div>
         </div>
        </div>
