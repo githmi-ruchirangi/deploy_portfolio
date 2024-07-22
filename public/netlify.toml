@@ -1,4 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
 [[redirects]]
-from="/*"
-to="/index.tsx"
-status=200
+  from = "/*"
+  to = "/_next/*"
+  status = 200
+  force = true
