@@ -48,7 +48,7 @@ const Skills = () => {
                             <SkillCard title="Flutter" image="/images/flutter.svg"  />
                         </div>
                         <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="1000">
-                            <SkillCard title="Dart" image="/images/dart.png"  />
+                            <SkillCard title="Dart" image="/images/dart.svg"  />
                         </div>
                         <div data-aos="flip-left" data-aos-anchor-placement="top-center" data-aos-delay="1200">
                             <SkillCard title="JavaScript" image="/images/js.svg"  />
