@@ -19,7 +19,7 @@ const Project = () => {
         tech3Padding="px-6 py-3"
         tech4="Flask"
         tech4Padding="px-6 py-3"
-        image="/images/p1.png" 
+        image="/images/p1.svg" 
         repoLink="https://github.com/wihanga-dilantha/chess-move-suggestions-with-CNN"
       />
       <ProjectCard 
@@ -33,7 +33,7 @@ const Project = () => {
         tech3Padding="px-6 py-3"
         tech4="Flask"
         tech4Padding="px-6 py-3"
-        image="/images/p2.jpg" 
+        image="/images/p2.svg" 
         repoLink="https://github.com/wihanga-dilantha/Voice-Emotion-Detection"
       />
       <ProjectCard 
@@ -47,7 +47,7 @@ const Project = () => {
         tech3Padding="px-6 py-1"
         tech4="TypeScript"
         tech4Padding="px-6 py-3"
-        image="/images/p3.jpg" 
+        image="/images/p3.svg" 
         repoLink="methanata danna"
       />
       <ProjectCard 
@@ -57,7 +57,7 @@ const Project = () => {
         tech1Padding="px-6 py-1"
         tech2="Firebase"
         tech2Padding="px-6 py-3"
-        image="/images/p4.jpg" 
+        image="/images/p4.svg" 
         repoLink="https://github.com/wihanga-dilantha/Gas-Level-METER-Android-"
       />
        <ProjectCard 
@@ -69,7 +69,7 @@ const Project = () => {
         tech1Padding="px-6 py-1"
         tech2="Laravel"
         tech2Padding="px-6 py-3"
-        image="/images/p5.jpg" 
+        image="/images/p5.svg" 
         repoLink="https://github.com/optimuspnj/ICT3263-group-assignment"
       />
     </div>

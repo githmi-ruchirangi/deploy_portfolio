@@ -36,31 +36,31 @@ const InterestsSlider = () => {
     itemClass="item"   
     >
      <InterestCard 
-     image="/images/interest01.jpg" 
+     image="/images/interest01.svg" 
      interest="AI Development and Researches" 
      desc="Explore the cutting-edge field of Artificial Intelligence where I delve into developing innovative solutions and conducting research to push the boundaries of AI technology."
     
      />
      <InterestCard 
-     image="/images/interest02.jpg" 
+     image="/images/interest02.svg" 
      interest="Mobile Application Development" 
      desc="Dive into the dynamic world of mobile app development, where I craft user-friendly and innovative applications for Android and iOS platforms, leveraging the latest technologies."
      
      />
      <InterestCard 
-     image="/images/interest03.jpg" 
+     image="/images/interest03.svg" 
      interest="Cybersecurity" 
      desc="Delve into cybersecurity, where I work diligently to safeguard digital assets and protect against evolving cyber threats through proactive measures, ethical hacking, and robust security practices."
     
      />
      <InterestCard 
-     image="/images/interest04.jpg" 
+     image="/images/interest04.svg" 
      interest="Chess" 
      desc="Embark on the strategic journey of chess, a game that sharpens critical thinking, problem-solving, and decision-making skills, fostering a strategic mindset and a love for intellectual challenges."
     
      />
      <InterestCard 
-     image="/images/interest05.jpg" 
+     image="/images/interest05.svg" 
      interest="Travelling" 
      desc="Embrace the adventure of travel, exploring diverse cultures, landscapes, and experiences around the globe, fostering curiosity, empathy, and a broader perspective on the world.
 
@@ -68,7 +68,7 @@ const InterestsSlider = () => {
     
      />
       <InterestCard 
-     image="/images/interest06.jpg" 
+     image="/images/interest06.svg" 
      interest="Sports and Fitness" 
      desc="Engage in the pursuit of physical well-being through sports and fitness activities, nurturing a healthy lifestyle, discipline, and resilience while enjoying the thrill of competition and personal growth."
     
